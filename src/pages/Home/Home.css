@@ -1,0 +1,27 @@
+.app {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1240px;
+}
+.main_container {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.footer_container {
+    max-width: 1440px;
+}
+

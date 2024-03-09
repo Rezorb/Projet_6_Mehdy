@@ -1,0 +1,26 @@
+.collapse-title {
+    background-color: #FF6060;
+    color: white;
+    padding: 10px 20px 10px 15px;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 5px;
+    display: flex;
+}
+.collapse-content {
+    background-color: #5ec5cc73;
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px 10px 5px 5px;
+    margin: 0 auto;
+
+}
+.collapse-container {
+    max-width: 1240px;
+    width: 100%;
+}
+
+.collapse-icon {
+    
+}

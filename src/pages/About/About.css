@@ -1,0 +1,27 @@
+.about_gap {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.fiabilty, .respect, .service, .security {
+    background-color: #FF6060;
+    color: white;
+    padding: 10px 20px 10px 15px;
+    font-size: 24px;
+    border-radius: 5px;
+}
+.collapse {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+}

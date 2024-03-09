@@ -1,0 +1,22 @@
+.card {
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%;
+    height: 300px;
+    background: linear-gradient(to bottom, #FF6060, #a84444);
+    cursor: pointer;
+}
+
+.card__title {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: auto;
+    max-width: 50%;
+    text-align: start;
+    padding-inline-start: 20px;
+    padding-block-end: 20px;
+}

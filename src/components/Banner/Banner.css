@@ -1,0 +1,25 @@
+.banner {
+    height: 223px;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+}
+.banner-image {
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+.banner-title {
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding-top: 80px;
+}
