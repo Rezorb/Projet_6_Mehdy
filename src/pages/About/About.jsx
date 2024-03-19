@@ -6,6 +6,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Banner from "../../components/Banner/Banner";
 import Footer from "../../components/Footer/Footer";
 import Collapse from "../../components/Collapse/Collapse";
+import CollapseData from "../../Data/CollapseData.json"
 
 function About() {
   return (
@@ -17,10 +18,13 @@ function About() {
         </div>
         <Banner />
         <main className="collapse">
-          <Collapse />
-          <Collapse />
-          <Collapse />
-          <Collapse />
+
+          {CollapseData.map((collapse) => (
+
+            <Collapse key={collapse.id} title={collapse.title} content={collapse.content} />
+
+          ))}
+
         </main>
         <Footer />
       </div>

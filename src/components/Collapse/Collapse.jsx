@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import './Collapse.css';
+import "./Collapse.css";
+import vector from "../../assets/Vector.png";
 
-function Collapse() {
+function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
@@ -11,14 +12,14 @@ function Collapse() {
   return (
     <div className="collapse-container">
       <div className="collapse-header" onClick={toggleCollapse}>
-        <span className="collapse-title">Description</span>
-        <span className="collapse-icon">{isOpen ? '<' : '>'}</span>
+        <span className="collapse-title">{title}</span>
+        <img
+          className={isOpen ? "vector vector_down" : "vector vector_up"}
+          src={vector}
+          alt="Arrow"
+        ></img>
       </div>
-      {isOpen && (
-        <div className="collapse-content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolorum quaerat ipsa praesentium iusto voluptatem laboriosam, sssss amet dicta iure necessitatibus rem, quas numquam officia omnis quam ducimus nulla. Fuga!
-        </div>
-      )}
+      {isOpen && <div className="collapse-content">{content}</div>}
     </div>
   );
 }
