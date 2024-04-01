@@ -1,0 +1,25 @@
+.host_info {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.host_fullname {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0;
+    font-size: 18px;
+    color: #FF6060;
+}
+
+.host_name p {
+    margin: 0;
+    margin-bottom: 5px;
+
+}
+
+.host_img {
+    object-fit: none;
+}
