@@ -1,16 +1,15 @@
-import logo from "../../assets/Logo.png";
-import "./Header.css";
-import { NavLink } from "react-router-dom";
+import React from 'react';
+import "./Header.css"
+import Logo from '../Logo/Logo';
+import Navbar from '../Navbar/Navbar';
 
-function Header() {
+const Header = () => {
   return (
-    <header>
-      <div className="header_logo">
-        {" "}
-        <NavLink to='/'><img src={logo} alt="Logo Kasa" /></NavLink>
-      </div>
+    <header className='header_container'>
+      <Logo />
+      <Navbar />
     </header>
   );
-}
+};
 
 export default Header;

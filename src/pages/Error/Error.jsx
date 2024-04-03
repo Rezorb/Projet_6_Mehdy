@@ -1,7 +1,7 @@
 import React from "react";
 import "./Error.css";
 import "../Home/Home.css";
-import Header from "../../components/Header/Header";
+import Logo from "../../components/Logo/Logo";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import { NavLink } from "react-router-dom";
@@ -11,7 +11,7 @@ function Error() {
     <>
       <div className="error_gap">
         <div className="header_container">
-          <Header />
+          <Logo />
           <Navbar />
         </div>
         <div className="error">

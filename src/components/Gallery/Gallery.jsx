@@ -1,13 +1,13 @@
 import React from "react";
 import "./Gallery.css";
 import Card from "../Card/Card.jsx";
-import cardsData from "../../Data/CardsData.json";
+import CardsData from "../../Data/CardsData.json";
 
 function Gallery() {
   return (
-    <div className="gallery">
-      {cardsData.map((housing) => (
-        <Card key={housing.id} housing={housing} />
+    <div className='gallery'>
+      {CardsData.map((item) => (
+        <Card key={item.id} id={item.id} title={item.title} cover={item.cover} />
       ))}
     </div>
   );

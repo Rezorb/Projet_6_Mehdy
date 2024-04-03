@@ -2,12 +2,11 @@ import React from "react";
 import "./Card.css";
 import { Link } from "react-router-dom";
 
-// On ajoute `housing` comme prop pour recevoir les données du logement.
-function Card({ housing }) {
+function Card({ id, title, cover }) {
   return (
-    <div className="card">
-      <Link to={`/housing/${housing.id}`}>
-        <div className="card__title">{housing.title}</div>
+    <div className="card" style={{ backgroundImage: `url(${cover})` }}>
+      <Link to={`/housing/${id}`}>
+        <div className="card__title">{title}</div>
       </Link>
     </div>
   );

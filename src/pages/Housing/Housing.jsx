@@ -1,6 +1,6 @@
 import React from "react";
 import "./Housing.css";
-import Header from "../../components/Header/Header";
+import Logo from "../../components/Logo/Logo";
 import Navbar from "../../components/Navbar/Navbar";
 import Slideshow from "../../components/Slideshow/Slideshow";
 import Footer from "../../components/Footer/Footer";
@@ -39,7 +39,7 @@ const Housing = () => {
   return (
     <div className="body">
       <div className="header_container">
-        <Header />
+        <Logo />
         <Navbar />
       </div>
       <main className="main_container">
