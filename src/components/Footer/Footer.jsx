@@ -1,14 +1,12 @@
-import logo from "../../assets/footer.png";
-import "./Footer.css";
+import logo from "../../assets/Logo_footer.png";
+import "./Footer.scss"
 
 function Footer() {
   return (
-    <footer>
-      <div className="footer_logo">
-        {" "}
-        <img src={logo} alt="Footer kasa" />
-      </div>
-    </footer>
+		<footer className='footer'>
+			<img src={logo} alt="Kasa - agence de location d'appartements entre particuliers" />
+			<p className='footer_2020'>© 2020 Kasa. All rights reserved</p>
+		</footer>
   );
 }
 

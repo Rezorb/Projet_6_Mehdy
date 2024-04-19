@@ -1,0 +1,15 @@
+@import '../../sass/base/_reset.scss';
+
+.home {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    @media screen and (max-width: 768px) {
+        gap: 30px;
+      }
+    @media screen and (max-width: 576px) {
+        gap: 27px;
+      }
+}
+
+

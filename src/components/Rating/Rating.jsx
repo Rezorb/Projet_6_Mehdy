@@ -1,9 +1,12 @@
 import React from "react";
 import RedStar from "../../assets/RedStar.png";
 import GrayStar from "../../assets/GrayStar.png";
-import "./Rating.css";
+import "./Rating.scss";
 
 function Rating({ rating }) {
+  // Convertir la note en un nombre entier
+  const ratingInt = parseInt(rating, 10);
+
   return (
     <div>
       {[...Array(5)].map((star, index) => {
@@ -11,9 +14,9 @@ function Rating({ rating }) {
         return (
           <img
             key={index}
-            src={ratingValue <= rating ? RedStar : GrayStar}
-            alt="star"
-            className="stars"
+            src={ratingValue <= ratingInt ? RedStar : GrayStar}
+            alt={ratingValue <= ratingInt ? "red star" : "gray star"}
+            className="star"
           />
         );
       })}

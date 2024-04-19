@@ -1,19 +1,19 @@
-import "./Home.css";
-import HeaderLayout from "../../components/Layout/HeaderLayout/HeaderLayout"
-import FooterLayout from "../../components/Layout/FooterLayout/FooterLayout"
-import Banner from "../../components/Banner/Banner";
+import "./Home.scss";
+import Header from "../../components/Header/Header";
+import MainLayout from "../../components/Layout/MainLayout/MainLayout";
+import Footer from "../../components/Footer/Footer";
 import Gallery from "../../components/Gallery/Gallery";
 
-function App() {
+function Home() {
   return (
-    <HeaderLayout>
-      <div className="main_container">
-        <Banner />
+    <div className="home">
+      <Header/>
+      <MainLayout>
         <Gallery />
+      </MainLayout>
+      <Footer/>
       </div>
-      <FooterLayout />
-    </HeaderLayout>
   );
 }
 
-export default App;
+export default Home;

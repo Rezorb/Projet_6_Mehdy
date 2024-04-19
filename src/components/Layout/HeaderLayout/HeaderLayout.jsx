@@ -3,10 +3,10 @@ import Header from '../../Header/Header';
 
 const HeaderLayout = ({ children }) => {
   return (
-    <div>
+    <header>
       <Header />
       {children}
-    </div>
+    </header>
   );
 };
 

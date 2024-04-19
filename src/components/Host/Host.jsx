@@ -1,22 +1,23 @@
 import React from "react";
-import "./Host.css";
-
+import "./Host.scss";
 
 function Host(props) {
-    const [firstName, lastName] = props.name.split(" ");
+  const [firstName, lastName] = props.name.split(" ");
   return (
     <>
-      <div className="housing_host">
-        <div className="host_info">
-          <div className="host_fullname">
-            <p>
-              {firstName}
-              <br />
-              {lastName}
-            </p>
-          </div>
-          <img className="host_img" src={props.picture} alt={`${props.name}`} />
+      <div className="host_info">
+        <div className="host_info_fullname">
+          <p>
+            {firstName}
+            <br />
+            {lastName}
+          </p>
         </div>
+        <img
+          className="host_info_img"
+          src={props.picture}
+          alt={`${props.name}`}
+        />
       </div>
     </>
   );

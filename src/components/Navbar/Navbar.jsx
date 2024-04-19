@@ -1,15 +1,19 @@
 import React from "react";
-import "./Navbar.css";
-import { Link } from "react-router-dom";
+import "./Navbar.scss";
+import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {
+  const currentPage = useLocation("");
+
   return (
     <nav className="navbar">
-      <Link to="/">
-        <div>Accueil</div>
+      <Link to="/" className={currentPage.pathname === "/" ? "active" : ""}>
+        Accueil
       </Link>
-      <Link to="/about">
-        <div>A propos</div>
+      <Link
+        to="/about"
+        className={currentPage.pathname === "/about" ? "active" : ""}>
+        A propos
       </Link>
     </nav>
   );

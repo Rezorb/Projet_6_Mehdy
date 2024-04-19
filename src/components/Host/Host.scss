@@ -1,0 +1,32 @@
+@import "../../sass/main.scss";
+
+.host_info {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    order: 2;
+  }
+
+  &_fullname p {
+    text-align: end;
+    margin: 0;
+    font-size: 18px;
+    color: $primary-color;
+    @media screen and (max-width: 576px) {
+      font-size: 12px;
+    }
+  }
+
+  &_img {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    @media screen and (max-width: 576px) {
+      width: 33px;
+      height: 33px;
+    }
+  }
+}

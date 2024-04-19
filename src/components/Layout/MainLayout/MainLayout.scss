@@ -1,0 +1,19 @@
+@import "../../../sass/main.scss";
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1240px;
+    gap: 38px;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        gap: 28px;
+      }
+    @media screen and (max-width: 576px) {
+    gap: 22px;
+    }
+}

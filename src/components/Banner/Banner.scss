@@ -1,0 +1,56 @@
+@import "../../sass/main.scss";
+
+.banner,
+.banner_about {
+  position: relative;
+  display: flex;
+  border-radius: 25px;
+  background-position: center;
+  height: 223px;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  @media screen and (max-width: 1239px) {
+    background-size: cover;
+  }
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+  @media screen and (max-width: 576px) {
+    margin: 0 auto;
+    height: 111px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+
+  h1 {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    @media screen and (max-width: 768px) {
+      font-size: 38px;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 24px;
+    }
+    @media screen and (max-width: 400px) {
+      text-align: left;
+      width: 73%;
+      margin: 0;
+    }
+  }
+}
+
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../../assets/BannerHome.png");
+
+  &_about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../../assets/BannerAbout.png");
+  }
+}

@@ -1,0 +1,28 @@
+@import "../../sass/main.scss";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 57px;
+  @media screen and (max-width: 768px) {
+    gap: 27px;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  a.active {
+    text-decoration: underline;
+  }
+}

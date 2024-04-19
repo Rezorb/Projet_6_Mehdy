@@ -1,0 +1,45 @@
+@import "../../sass/main.scss";
+
+.slideshow_container {
+  position: relative;
+
+  &_img {
+    height: 415px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    @media screen and (max-width: 576px) {
+      height: 255px;
+    }
+  }
+
+  .prev__arrow {
+    position: absolute;
+    top: 38%;
+    left: 2%;
+    cursor: pointer;
+    @media screen and (max-width: 576px) {
+      height: 24px;
+      top: 43%;
+    }
+  }
+
+  .next__arrow {
+    position: absolute;
+    top: 38%;
+    left: 94%;
+    margin-left: 5px;
+    cursor: pointer;
+    @media screen and (max-width: 576px) {
+      height: 24px;
+      top: 43%;
+    }
+  }
+
+  &_counter {
+    position: absolute;
+    left: 50%;
+    bottom: 3%;
+    color: $tertiary-color;
+  }
+}
