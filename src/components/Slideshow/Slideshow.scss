@@ -12,34 +12,34 @@
       height: 255px;
     }
   }
-
-  .prev__arrow {
+  &_arrow {
     position: absolute;
-    top: 38%;
-    left: 2%;
+    height: 15%;
+    transform: translateY(-50%);
+    top: 50%;
     cursor: pointer;
-    @media screen and (max-width: 576px) {
-      height: 24px;
-      top: 43%;
+    &:active {
+      transform: translateY(-50%) scale(0.9);
     }
-  }
-
-  .next__arrow {
-    position: absolute;
-    top: 38%;
-    left: 94%;
-    margin-left: 5px;
-    cursor: pointer;
-    @media screen and (max-width: 576px) {
-      height: 24px;
-      top: 43%;
+    &_prev {
+      left: 2%;
+    }
+    &_next {
+      right: 2%;
     }
   }
 
   &_counter {
     position: absolute;
-    left: 50%;
+    width: 100%;
     bottom: 3%;
     color: $tertiary-color;
+  }
+  p {
+    justify-content: center;
+    display: flex;
+    @media screen and (max-width: 576px) {
+      display: none;
+    }
   }
 }

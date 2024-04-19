@@ -1,4 +1,4 @@
-/* @import "../../sass/main.scss"; */
+@import "../../sass/main.scss";
 
 .body {
   display: flex;
@@ -13,7 +13,7 @@
 }
 
 .main_container {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -68,12 +68,12 @@ ul {
 }
 
 li {
-  background-color: #ff6060;
+  background-color: $primary-color;
   border-radius: 10px;
   font-size: 14px;
   color: white;
   font-weight: 700;
-  padding: 3px 30px;
+  padding: 3px 22px;
   display: flex;
   justify-content: space-between;
   align-items: center;

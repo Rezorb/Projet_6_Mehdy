@@ -17,42 +17,46 @@ function Slideshow({ images }) {
   };
 
   return (
-    <div className="slideshow_container">
+    <section className="slideshow_container">
       {images.map((image, index) => {
         return (
           <div key={index}>
             {index === currentImg && (
-              <img className="slideshow_container_img" src={image} alt="housing" />
+              <img
+                className="slideshow_container_img"
+                src={image}
+                alt="housing"
+              />
             )}
           </div>
         );
       })}
 
-      {length > 1 && ( // Condition pour afficher le compteur et les flèches uniquement s'il y a plus d'une image
+      {length > 1 && (
         <>
           <img
             src={arrowPrev}
             onClick={prevImage}
-            className="prev__arrow"
+            className="slideshow_container_arrow slideshow_container_arrow_prev"
             alt="Preview arrow"
           />
           <img
             src={arrowNext}
             onClick={nextImage}
-            className="next__arrow"
+            className="slideshow_container_arrow slideshow_container_arrow_next"
             alt="Next arrow"
           />
         </>
       )}
 
-      {length > 1 && ( // Condition pour afficher le compteur uniquement s'il y a plus d'une image
+      {length > 1 && (
         <div className="slideshow_container_counter">
           <p>
             {currentImg + 1}/{length}
           </p>
         </div>
       )}
-    </div>
+    </section>
   );
 }
 
