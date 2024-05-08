@@ -48,6 +48,11 @@
     gap: 20px;
     margin-top: 15px;
   }
+  @media screen and (max-width: 576px) {
+    .collapse {
+      border-radius: 5px !important;
+    }
+  }
 }
 
 ul {
