@@ -1,9 +1,7 @@
 @import "../../sass/main.scss";
 
 .header_container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex(row, space-between, center);
   height: 68px;
   width: 85%;
   margin: 0 auto;

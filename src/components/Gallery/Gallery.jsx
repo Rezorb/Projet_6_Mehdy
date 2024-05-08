@@ -5,9 +5,14 @@ import CardsData from "../../Data/CardsData.json";
 
 function Gallery() {
   return (
-    <div className='gallery'>
+    <div className="gallery">
       {CardsData.map((item) => (
-        <Card key={item.id} id={item.id} title={item.title} cover={item.cover} />
+        <Card
+          key={item.id}
+          id={item.id}
+          title={item.title}
+          cover={item.cover}
+        />
       ))}
     </div>
   );

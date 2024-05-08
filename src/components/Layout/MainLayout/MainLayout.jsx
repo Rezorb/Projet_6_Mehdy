@@ -1,5 +1,5 @@
 import React from "react";
-import "./MainLayout.scss"
+import "./MainLayout.scss";
 import Banner from "../../Banner/Banner";
 
 const MainLayout = ({ children }) => {

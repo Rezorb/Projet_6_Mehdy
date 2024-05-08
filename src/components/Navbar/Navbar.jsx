@@ -12,7 +12,8 @@ function Navbar() {
       </Link>
       <Link
         to="/about"
-        className={currentPage.pathname === "/about" ? "active" : ""}>
+        className={currentPage.pathname === "/about" ? "active" : ""}
+      >
         A propos
       </Link>
     </nav>

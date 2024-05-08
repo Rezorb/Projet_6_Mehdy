@@ -1,34 +1,24 @@
-/* @import "../../sass/main.scss"; */
+@import "../../sass/main.scss";
 
-.error_gap {
-  color: #ff6060;
-  display: flex;
-  flex-direction: column;
-  gap: 139px;
-}
 .error {
-  display: flex;
-  flex-direction: column;
+  @include flex(column, space-between, center);
+  color: $primary-color;
   gap: 139px;
 }
 
 h1 {
   font-size: 288px;
   font-weight: 700;
-  text-align: center;
   margin: 0 auto;
 }
 h2 {
   font-size: 36px;
-  font-weight: 500;
-  text-align: center;
   margin: 0 auto;
+  text-align: center;
 }
 h3 {
   color: black;
   font-size: 18px;
-  font-weight: 500;
-  text-align: center;
   margin: 0 auto;
   text-decoration: underline;
 }
@@ -40,6 +30,7 @@ h3 {
 
   .error h2 {
     font-size: 18px;
+    width: 70%;
   }
 
   .error h3 {

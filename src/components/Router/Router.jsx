@@ -6,11 +6,41 @@ import About from "../../pages/About/About";
 import Error404 from "../../pages/Error/Error";
 import Housing from "../../pages/Housing/Housing";
 
+import Layout from "../Layout/layout";
+
 const router = createBrowserRouter([
-  { path: "/", element: <Home /> },
-  { path: "/about", element: <About /> },
-  { path: "/housing/:id", element: <Housing /> },
-  { path: "*", element: <Error404 /> },
+  {
+    path: "/",
+    element: (
+      <Layout>
+        <Home />
+      </Layout>
+    ),
+  },
+  {
+    path: "/about",
+    element: (
+      <Layout className="about_page">
+        <About />
+      </Layout>
+    ),
+  },
+  {
+    path: "/housing/:id",
+    element: (
+      <Layout>
+        <Housing />
+      </Layout>
+    ),
+  },
+  {
+    path: "*",
+    element: (
+      <Layout className="error_page">
+        <Error404 />
+      </Layout>
+    ),
+  },
 ]);
 
 export default router;

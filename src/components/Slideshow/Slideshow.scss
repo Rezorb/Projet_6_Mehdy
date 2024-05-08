@@ -36,8 +36,7 @@
     color: $tertiary-color;
   }
   p {
-    justify-content: center;
-    display: flex;
+    @include flex(row, center, center);
     @media screen and (max-width: 576px) {
       display: none;
     }

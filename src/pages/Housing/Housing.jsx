@@ -7,8 +7,7 @@ import Host from "../../components/Host/Host";
 import Rating from "../../components/Rating/Rating";
 import Collapse from "../../components/Collapse/Collapse";
 import CardsData from "../../Data/CardsData.json";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
+
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
@@ -32,7 +31,6 @@ const Housing = () => {
 
   return (
     <div className="body">
-      <Header />
       <main className="main_container">
         <Slideshow images={housingData.pictures} />
         <section>
@@ -61,17 +59,23 @@ const Housing = () => {
             </div>
           </div>
           <div className="housing_collapse">
-            <Collapse title="Description" content={housingData.description} />
+            <Collapse
+              title="Description"
+              content={housingData.description}
+              titleStyle={{ fontSize: "18px" }}
+              borderStyle={{ borderRadius: "10px" }}
+            />
             <Collapse
               title="Équipements"
               content={housingData.equipments.map((equipment, index) => (
                 <div key={index}>{equipment}</div>
               ))}
+              titleStyle={{ fontSize: "18px" }}
+              borderStyle={{ borderRadius: "10px" }}
             />
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Collapse.scss";
 import Arrow from "../../assets/Arrow.png";
 
-function Collapse({ title, content }) {
+function Collapse({ title, content, titleStyle, borderStyle }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = (e) => {
@@ -11,9 +11,11 @@ function Collapse({ title, content }) {
   };
 
   return (
-    <div className="collapse">
+    <div className={`collapse ${isOpen ? "is-open" : ""}`} style={borderStyle}>
       <div className="collapse_header" onClick={toggleCollapse}>
-        <span className="collapse_title">{title}</span>
+        <span className="collapse_title" style={titleStyle}>
+          {title}
+        </span>
         <img
           className={isOpen ? "arrow arrow_down" : "arrow arrow_up"}
           src={Arrow}

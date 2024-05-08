@@ -1,8 +1,7 @@
 @import "../../sass/main.scss";
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
+  @include flex(row, space-between, center);
   gap: 57px;
   @media screen and (max-width: 768px) {
     gap: 27px;
