@@ -2,13 +2,6 @@
 
 .about_gap {
   @include flex(column, center, center);
-  // gap: 38px;
-  // @media screen and (max-width: 768px) {
-  //   gap: 29px;
-  // }
-  // @media screen and (max-width: 576px) {
-  //   gap: 19px;
-  // }
 }
 
 .about {

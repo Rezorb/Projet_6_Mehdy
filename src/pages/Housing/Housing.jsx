@@ -12,16 +12,16 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 const Housing = () => {
-  const { id } = useParams();
-  const [housingData, setHousingData] = useState(null);
-  const navigate = useNavigate();
+  const { id } = useParams(); // Extraction de l'id du logement depuis l'URL.
+  const [housingData, setHousingData] = useState(null); // Const pour stocker les données du logement actuel.
+  const navigate = useNavigate(); // Const pour la navigation.
 
   useEffect(() => {
-    const foundHousing = CardsData.find((house) => house.id === id);
+    const foundHousing = CardsData.find((house) => house.id === id); // On recherche logement correspondant à l'id.
     if (!foundHousing) {
-      navigate("/404");
+      navigate("/404"); // Redirection vers la page 404 si le logement n'est pas trouvé.
     } else {
-      setHousingData(foundHousing);
+      setHousingData(foundHousing); // On met à jour l'état avec les données trouvées.
     }
   }, [id, navigate]);
 

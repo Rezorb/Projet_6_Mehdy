@@ -4,7 +4,6 @@ import GrayStar from "../../assets/GrayStar.png";
 import "./Rating.scss";
 
 function Rating({ rating }) {
-  // Convertir la note en un nombre entier
   const ratingInt = parseInt(rating, 10);
 
   return (

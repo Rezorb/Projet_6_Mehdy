@@ -7,9 +7,11 @@ function Navbar() {
 
   return (
     <nav className="navbar">
+      {/* Lien vers la page 'home' */}
       <Link to="/" className={currentPage.pathname === "/" ? "active" : ""}>
         Accueil
       </Link>
+      {/* Lien vers la page 'about' */}
       <Link
         to="/about"
         className={currentPage.pathname === "/about" ? "active" : ""}

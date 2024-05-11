@@ -6,6 +6,7 @@ import CardsData from "../../Data/CardsData.json";
 function Gallery() {
   return (
     <div className="gallery">
+      {/* Itération avec '.map()' sur CardsData pour créer une Card pour chaque élément */}
       {CardsData.map((item) => (
         <Card
           key={item.id}
